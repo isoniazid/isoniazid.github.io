@@ -1,29 +1,64 @@
+<!DOCTYPE html>
+<html lang = "ru">
 <head>
     <meta charset="utf-8">
     <title>LAPSHEREZKA</title>
-    <link rel="stylesheet" type="text/css" media="screen" href="styles.css">
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:800italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css">
     </head>
     
     <body bgcolor ="#00212b" topmargin="0" leftmargin="0">
     <div class="head head_font trans">
-    <a href="index.html" class="trans">BACK</a>
+    <a href="index.html" class="trans">Обратно</a>
     </div>
     <br>
     <br>
     <br>
     <div class="cont" align = "center">
+        <br>
+        <br>
     <center class = "font_title">LAPSHEREZKA</center>
-    <img src= "lapsherezka.PNG" hspace = "1%" vspace = "10%" align = "left">
+    <img src= "lapsherezka.PNG" hspace = "2%" vspace = "11%"  align = "left">
     <br>
     <br>
-    <br>
-    <center class ="font_cont">Is a program for reading and sending messages to microcontrollers.</center><br>
-    <center class ="font_cont">Or, in two words - "port monitor"</center><br>
-    <center class ="font_cont">Someday I'll upload the binary here</center><br>
-    <center class ="font_cont">But now, let me tell you about its features:</center><br>
-    <center class ="font_cont">1) Sexy design (in my humble opinion)</center><br>
-    <center class ="font_cont">2) Amazing name</center><br>
-    <center class ="font_cont">3) (not relevant) can monitor ports</center><br>
+    <p class ="font_cont_smaller" align = "left">Лапшерезка - это монитор порта, программа, которая позволяет взаимодействовать с микроконтроллером на ПК:
+        считывать сообщения, отправлять запросы, отлаживать записанные программы (путем считывания сообщений)....
+    </p>
+    <p class ="font_cont_smaller" align = "left">Когда я настраивал под себя среду разработки, мне не понравился встроенный монитор порта.
+    </p>
+    <p class ="font_cont_smaller" align = "left">Существующие сторонние решения мне тоже не нравились, например, потому, что были сделаны не мной.
+    Поэтому я написал свою программу с нужным лично мне функционалом и назвал ее "Лапшерезка".
+    </p>
+        <p class ="font_cont_smaller" align = "left">Помимо непосредственно монитора порта она содержит также подпрограмму "Фунчоза", которая рисует
+            в реальном времени графики по получаемым показаниям.
+            </p>
+            <br>
+            <br>
+            <p class ="font_cont_smaller" align = "left">Проект написан на Python 3 c использованием QT6. В данный момент функционал еще дописывается
+                </p>
+                <p class ="font_title" align = "center">Основные фичи:
+                </p>
+                <p class ="font_extra" align = "center">- Логирование
+                </p>
+                <p class ="font_cont_smaller" align = "center">Все операции и сообщения сохраняются в файлы с расширением .noodles. Потом их можно
+                    читать, если надо. 
+                </p>
+                <br>
+                <p class ="font_extra" align = "center">- Включение/Отключение очистки ввода
+                </p>
+                <p class ="font_cont_smaller" align = "center">Очень часто мне при отладке нужно было много раз отправлять одно и то же сообщение
+                    микроконтроллеру. Чтобы каждый раз не вводить его в строку сообщения, я сделал чекбокс, который отменяет очистку ввода.
+                </p>
+                <br>
+                <p class ="font_extra" align = "center">- Построение графиков в реальном времени
+                </p>
+                <p class ="font_cont_smaller" align = "center">
+                    Часто очень удобно представлять получаемые данные в виде графика - например, если смотришь, как быстро
+                    происходит рост температуры или как меняется влажность в течение дня. Подпрограмма "Funchoza"
+                    находит во входном сообщении числа, парсит их, и строит по ним графики. Ось абсцисс
+                    не обязательно всегда должна отображать координату времени - можно привязать ее к другим входным данным. Так можно,
+                    например, отрисовывать траекторию движения, если во входном сообщении есть координаты X и Y. Также имеется возможность
+                    строить несколько графиков в одной системе координат.
+                </p>
     </div>
     </body>
+    </html>
