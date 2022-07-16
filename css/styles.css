@@ -1,116 +1,166 @@
-A
-{
- color: white;
- text-decoration: none;
+/* source-code-pro-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Source Code Pro SMALL';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('../fonts/source-code-pro-v21-latin_cyrillic-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/source-code-pro-v21-latin_cyrillic-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-A:hover
-{
- text-decoration: none;
- /*color: #673AB7;*/
- color: #00BCD4;
+/* source-code-pro-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/source-code-pro-v21-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/source-code-pro-v21-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.date
-{
-color: #004151;
-text-align: right;
-font-size:10pt;
-margin-right: 5%;
-font-family: sans-serif;
+/* jura-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Jura-300';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('../fonts/jura-v24-latin_cyrillic-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/jura-v24-latin_cyrillic-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.head
-{
- box-shadow: 0px 1px 0px 0px #004151;
- font-size: 24pt;
- padding-top: 1%;
- padding-bottom: 1%;
- padding-left: 15px;
- font-family: sans-serif;
- background: #073642;
- 
- width: 100%;
+/* jura-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Jura-400';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/jura-v24-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/jura-v24-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.title
-{
- box-shadow: 0px 5px 0px 0px rgba(230,230,230,1);
- border-radius: 10px; 
- padding-top: 6px;
- padding-bottom: 5px;
- overflow: hidden;
- background: #fafafa;
- color: #004151;
- position: absolute;
- width: 70%;
- left: 15%;
- right: 25%;
- margin:  auto;
- font-size: 400%;
- font-family:'Open Sans', sans-serif;
- height: 77px;
+/* jura-700 - latin_cyrillic */
+@font-face {
+    font-family: 'Jura-700';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+        url('../fonts/jura-v24-latin_cyrillic-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/jura-v24-latin_cyrillic-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-.bottom
-{
- color: #004151;
- padding-top: 23px;
- padding-left: 5%;
- padding-right: 5%;
- margin-left: auto;
- margin-right: auto;
- background: #F7AC00;
- height: 37px;
- width: 60%;
+
+A {
+    color: white;
+    text-decoration: none;
 }
 
-.cont
-{
- background: #073642;
- box-shadow: 10px 7px 0px 0px #002b36;
- border-radius: 10px; 
- font-size: 200%;
- font-family:'Arial', sans-serif;
- /*padding-top: 5%;*/
- padding-left: 5%;
- padding-right: 5%;
- padding-bottom: 5%;
- margin-bottom: 10%;
- margin-left: auto;
- margin-right: auto;
- width: 60%;
+A:hover {
+    text-decoration: none;
+    /*color: #673AB7;*/
+    color: #00BCD4;
 }
 
-.font_title
-{
- color: #cb442b;
- font-size: 30pt;
- font-family: 'Courier New', Courier, monospace;
+.date {
+    color: #004151;
+    text-align: right;
+    font-size: 10pt;
+    margin-right: 5%;
+    font-family: sans-serif;
 }
 
-.font_cont
-{
- color: white;
- font-size: 24pt;
- font-family: 'Courier New', Courier, monospace;
+.head {
+    box-shadow: 0px 1px 0px 0px #004151;
+    font-size: 24pt;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 15px;
+    font-family: 'Jura-400', monospace;
+    background: #073642;
+
+    width: 100%;
 }
 
-.font_cont_smaller
-{
- color: white;
- font-size: 18pt;
- font-family: 'Courier New', Courier, monospace;
+.title {
+    box-shadow: 0px 5px 0px 0px rgba(230, 230, 230, 1);
+    border-radius: 10px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    background: #fafafa;
+    color: #004151;
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    right: 25%;
+    margin: auto;
+    font-size: 400%;
+    font-family: 'Open Sans', sans-serif;
+    height: 77px;
 }
 
-.font_extra
-{
- color: #859900;
- font-size: 24pt;
- font-family: 'Courier New', Courier, monospace;
+.bottom {
+    color: #004151;
+    padding-top: 23px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    background: #F7AC00;
+    height: 37px;
+    width: 60%;
 }
 
-.trans
-{
- transition: 0.7s;
+.cont {
+    background: #073642;
+    box-shadow: 10px 7px 0px 0px #002b36;
+    border-radius: 10px;
+    font-size: 200%;
+    font-family: 'Arial', sans-serif;
+    /*padding-top: 5%;*/
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+    margin-bottom: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+.font_title {
+    color: #cb442b;
+    font-size: 30pt;
+    font-family: 'Jura-400', monospace;
+}
+
+.font_cont {
+    color: white;
+    font-size: 24pt;
+    font-weight: 300;
+    font-family: 'Source Code Pro SMALL', monospace;
+}
+
+.font_cont_smaller {
+    color: white;
+    font-size: 18pt;
+    font-family: 'Source Code Pro SMALL', monospace;
+}
+
+.font_extra {
+    color: #859900;
+    font-size: 24pt;
+    font-family: 'Source Code Pro SMALL', monospace;
+}
+
+.trans {
+    transition: 0.7s;
 }
